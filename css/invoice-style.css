@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    color: black;
+}
+
+header {
+    background-color: #A0A0A0;
+    display: grid;
+    min-height: 15vh;
+    grid-template-columns: auto auto;
+    padding: 1em;
+}
+
+header h1,
+#dueDetails {
+    margin: auto 0;
+}
+
+#dueDetails,
+#contactInfo {
+    text-align: right;
+}
+
+main {
+    padding: 1em 3em;
+}
+
+#invoiceInfo,
+#invoiceDetails {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+#repairInfo,
+#loanInfo {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#costInfo {
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
+.container {
+    margin: 1em;
+}
+
+.list {
+    margin: 0 2em;
+    display: grid;
+    grid-template-columns: 10em auto;
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
+.container h2,
+.container h3 {
+    padding-bottom: 1em;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#itemList tr {
+    height: 50px;
+}
+
+#itemList {
+    width: 20vw;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#itemList,
+#itemList th,
+td {
+    border: 1px solid black;
+}
+
+footer {
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    border-top: 1px solid black
+}
