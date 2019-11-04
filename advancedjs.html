@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<!--Head-->
+
+<head>
+    <title>WATSOF1 assignment 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/showcase.css" type="text/css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/advancedjs.js"></script>
+</head>
+
+<!--Body-->
+
+<body>
+    <!--Header Section-->
+    <header>
+        <!--Title-->
+        <h1 class="title-area">Phone Fix Booking System</h1>
+        <!--Navbar-->
+        <nav class="menu-area">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="advancedjs.html">Extension</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main Section-->
+    <main>
+            <div class="advjs">
+                    <h2> Date Picker</h2>
+                    <p>A simple date picker. clicking the box will allow you to choose a date off a calander</p>
+                    <br>
+                    <div class="exampleArea">
+                        <label>Select a date:</label>
+                        <input type="text" id="datepicker">
+                    </div>
+                </div>
+                
+                <div class="advjs">
+                    <h2>GeoLocation</h2>
+                    <p>When location access is granted this function will return your location</p>
+                    <br>
+                    <div class="exampleArea">
+                        <label>Click the button to get your location coordinates:</label>
+                        <button onclick="getLocation()">Get Location</button>
+                        <p id="locationOutput"></p>
+                    </div>
+                </div>
+                <div class="advjs">
+                    <h2>Drag and Drop</h2>
+                    <p>This function allows you to drag the image between divs</p>
+                    <br>
+                    <div class="exampleArea">
+                        <p>Drag the phone between the two boxes below:</p>
+                        <div id="dropdiv1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <img src="media/phone.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100" height="100">
+                        </div>
+                        <div id="dropdiv2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="advjs">
+                    <h2>Web Storage</h2>
+                    <p>This function allows you to utilize local storage. add your name and retrieve it using the buttons below</p>
+                    <br>
+                    <div class="exampleArea">
+                        <label>Enter a name to store:</label>
+                        <input id="storageInput">
+                        <br>
+                        <button onclick="storeData()">Store Data</button>
+                        <button onclick="deleteData()">Delete Data</button>
+                        <button onclick="retrieveData()">Retrieve Data</button>
+                    </div>
+                </div>
+
+    </main>
+
+    <!--Footer Section-->
+    <footer>
+        <p>Advanced Web Design, Copyright &copy; 2019</p>
+    </footer>
+</body>
+
+</html>

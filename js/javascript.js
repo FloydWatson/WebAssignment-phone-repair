@@ -312,7 +312,7 @@ function displayInvoice(custName, custAddress, custAddress2, custPhone, custEmai
                     <h3>Repair Job</h3>
                     <div class="list">
                         <h4>Job Number:</h4>
-                        <p>${Math.floor((Math.random() * 99999) + 100000)}</p>
+                        <p>${Math.floor((Math.random() * 999) + 10000)}</p>
                         <h4>Invoice Date:</h4>
                         <p>${months[dateNow.getMonth()] + " " + dateNow.getDate() + ", " + dateNow.getFullYear() + " - " + dateNow.getHours() + ":" + dateNow.getMinutes()}</p>
                         <h4>Payment Date:</h4>
@@ -403,8 +403,8 @@ function displayInvoice(custName, custAddress, custAddress2, custPhone, custEmai
             </div>
             <div id="contactInfo" class="container">
                 <h3>Contact Us</h3>
-                <p><span style="font-weight: bold">Phone: </span>06876543<br>
-                <span style="font-weight: bold">Email: </span>phonefix@email.com</p>
+                <p><span style="font-weight: bold">Phone: </span>068760248<br>
+                <span style="font-weight: bold">Email: </span>fixyaphone@gmail.com</p>
     
             </div>
         </footer>
