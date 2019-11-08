@@ -5,9 +5,10 @@
 <head>
     <title>WATSOF1 assignment 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/showcase.css" type="text/css">
-
+    
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -31,7 +32,25 @@
     </header>
 
     <!--Main Section-->
-    <main id="faqDisplay">
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                        <section class="form-group">
+                            <h1>Search through FAQ's</h1>
+                            <label>Search: </label>
+                            <input  class="form-control" type="text" id="searchInput" style="margin-bottom: 20px;">
+                            <button class="btn btn-primary" type="button" value="search" onclick="searchFunction()">Search</button>
+                            <!-- <input type="button" value="search" onclick="searchFunction()"> -->
+                            <p id="searchResult"></p>
+                        </section>
+                </div>
+            </div>
+        </div>
+       
+        <div id="faqDisplay">
+
+        </div>
             
 
     </main>
