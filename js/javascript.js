@@ -208,7 +208,7 @@ function removeCharger() {
 }
 
 function updateForm() {
-    //Warranty field
+    // Warranty field
     var d = $('input#purchasedate').val();
     var date = d.split("/");
     var purchaseDate = new Date(date[2], date[0] - 1, date[1]);
@@ -218,10 +218,10 @@ function updateForm() {
         $('input#warranty').prop('checked', true);
     }
 
-    //Bond field
+    // Bond field
     var sum = 0;
     if (!document.getElementById('typebusiness').checked) {
-        //Total the cost of items in the table
+        // Total the cost of items in the table
         $('.cost').each(function() {
             var value = $(this).text();
             sum += parseFloat(value);
@@ -229,7 +229,7 @@ function updateForm() {
     }
     document.getElementById("bond").value = convertToMoney(sum);
 
-    //Service Fee field
+    // Service Fee field
     if (!document.getElementById("warranty").checked) {
         service = 85;
     } else {
@@ -237,25 +237,25 @@ function updateForm() {
     }
     document.getElementById("service").value = convertToMoney(service);
 
-    //Total field
+    // Total field
     total = sum + service;
     document.getElementById("total").value = convertToMoney(total);
 
-    //GST field
+    // GST field
     gst = total * 0.15;
     document.getElementById("gst").value = convertToMoney(gst);
 
-    //Total(+GST) field
+    // Total(+GST) field
     grandTotal = total + gst;
     document.getElementById("grandtotal").value = convertToMoney(grandTotal);
 }
-
+// Adds Dollar notation and truncates to 2 decimal points
 function convertToMoney(aPrice) {
     return "$" + aPrice.toFixed(2);
 }
 
 function openFAQ() {
-    var faqWindow = window.open("faq.html", "_blank")
+    window.open("faq.html", "_blank")
 }
 
 function clearForm() {
@@ -263,12 +263,12 @@ function clearForm() {
     $('p.error_message').hide();
 }
 
-//-------------------------------------------------------------------
+// -------------------------------------------------------------------
 function displayInvoice(custName, custAddress, custAddress2, custPhone, custEmail, purchaseDate, repairDate, warranty, imei, make, model, fault, description, table, bond, service, total, gst, grandTotal) {
-    //create a "blank page"
+    // Create a "blank page"
     let invoiceWindow = window.open('', '_blank');
 
-    //Declare dates
+    // Declare dates
     let dateNow = new Date();
     let dateFuture = new Date(dateNow);
     dateFuture.setDate(dateNow.getDate() + 5)
@@ -277,7 +277,7 @@ function displayInvoice(custName, custAddress, custAddress2, custPhone, custEmai
         "October", "November", "December"
     ];
 
-    //Build the "invoice page": is an HTML document
+    // Add Head
     invoiceWindow.document.write(
         `
         <html>
@@ -289,7 +289,7 @@ function displayInvoice(custName, custAddress, custAddress2, custPhone, custEmai
         `
     );
 
-    //Write the body section for the page
+    // Add body to page
     invoiceWindow.document.write(
         `
         <body>
@@ -396,8 +396,8 @@ function displayInvoice(custName, custAddress, custAddress2, custPhone, custEmai
         <footer>
             <div id="companyInfo" class="container">
                 <h3>Phone Fix Services</h3>
-                <p>42 Fuxed It Drive<br>
-                Alexander<br>
+                <p>123 Fake st<br>
+                Faketon<br>
                 New Zealand<br>
                 4342</p>
             </div>

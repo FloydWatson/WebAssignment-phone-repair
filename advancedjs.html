@@ -33,10 +33,23 @@
 
     <!--Main Section-->
     <main>
+            <!--Statement of authenticity-->
+            <div id="statement">
+                <h3>Statement of authenticity</h3>
+                <p>I confirm that:</p>
+                <ul>
+                    <li>This is an original assessment and is entirely my own work.</li>
+                    <li>It contains no material previously published or written by another person or myself except where due acknowledgement is made in the text</li>
+                    <li>No material which to a substantial extent, has been submitted for any other academic course, is included without acknowledgement.</li>
+                </ul>
+            </div>
+            <!--Advanced JS starts here-->
             <div class="advjs">
+                <!--Date Picker Feature-->
                     <h2> Date Picker</h2>
                     <p>A simple date picker. clicking the box will allow you to choose a date off a calander</p>
                     <br>
+                    <!--Utilizes JQuery Date Picker-->
                     <div class="exampleArea">
                         <label>Select a date:</label>
                         <input type="text" id="datepicker">
@@ -44,9 +57,11 @@
                 </div>
                 
                 <div class="advjs">
+                    <!--GeoLocation Feature-->
                     <h2>GeoLocation</h2>
                     <p>When location access is granted this function will return your location</p>
                     <br>
+                    <!--Utilizes the Navigator API added with HTML5-->
                     <div class="exampleArea">
                         <label>Click the button to get your location coordinates:</label>
                         <button class="btn btn-primary" onclick="getLocation()">Get Location</button>
@@ -54,11 +69,13 @@
                     </div>
                 </div>
                 <div class="advjs">
+                    <!--Drag and Drop Feature-->
                     <h2>Drag and Drop</h2>
                     <p>This function allows you to drag the image between divs</p>
                     <br>
                     <div class="exampleArea">
                         <p>Drag the phone between the two boxes below:</p>
+                        <!--Utilizes advanced javascript-->
                         <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
                             <img src="./media/phone.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100" height="100">
                             </div>
@@ -67,10 +84,12 @@
                     </div>
                 </div>
                 <div class="advjs">
+                    <!--Web Storage Feature-->
                     <h2>Web Storage</h2>
                     <p>This function allows you to utilize local storage. add your name and retrieve it using the buttons below</p>
                     <br>
                     <div class="exampleArea">
+                        <!-- Utilizes Browser storage-->
                         <label>Enter a name to store:</label>
                         <input id="storageInput">
                         <br>
@@ -79,6 +98,15 @@
                         <button class="btn btn-primary" onclick="retrieveData()">Retrieve Data</button>
                     </div>
                 </div>
+                <div class="advjs">
+                    <!--JSON filter Feature-->
+                        <h2>Add “search” feature on FQAs page using filter() method</h2>
+                        <p>The search function searches all questions in a JSON array that match a specified key words</p>
+                        <br>
+                        <p>To see this feature please navigate to the FAQ's page using button below</p>
+                        <br>
+                        <a href="faq.html"><button class="btn btn-primary">Click here</button></a>
+                    </div>
 
     </main>
 

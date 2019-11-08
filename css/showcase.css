@@ -1,13 +1,10 @@
 
-
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
-
-
 
 :root {
     --main-color: #EBFAF5;
@@ -21,20 +18,17 @@ body {
     background-color: var(--main-color);
 }
 
-
 #statement {
+    background-color: var(--div-color);
     padding: 2em;
     font-weight: normal;
     text-align: left;
+    margin: 2.5em 5em;
 }
-
-
-
 
 main {
     color: black;
 }
-
 
 .advjs {
     padding: 1em;
@@ -69,8 +63,6 @@ img {
 .exampleArea {
     text-align: center;
 }
-
-
 
 footer {
     background-color: var(--footer-section-color);
